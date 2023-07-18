@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/edtInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:hint="Enter amount here" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/rdUSDtoBDT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="USD to BDT" />
+
+        <RadioButton
+            android:id="@+id/rdBDTtoUSD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BDT to USD" />
+
+        <RadioButton
+            android:id="@+id/rdINRtoUSD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="INR to USD" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnCalculate"
+        android:layout_width="193dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:text="Convert" />
+
+
+    <Button
+        android:id="@+id/btnClear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Clear" />
+</LinearLayout>
